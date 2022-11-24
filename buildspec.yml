@@ -8,5 +8,5 @@ phases:
       - docker build -t my-angular:latest .
   post_build:
     commands:
-      - docker tag my-angular:latest ${DOCKERHUB_USER}/my-angular-app:latest
+      - docker tag my-angular:latest ${DOCKERHUB_USER}/my-angular:latest
       - docker push ${DOCKERHUB_USER}/my-angular:latest
